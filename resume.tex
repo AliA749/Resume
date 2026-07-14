@@ -1,0 +1,167 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%resume->
+%Heading
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Ali Alkhulaqi}\\ \vspace {1pt}
+    \small 347-750-4280 $|$ href{alialkhulaqi2115@gmail.com} {\underline{alialkhulaqi2115@gmail.com}}$|$
+    \href{https://www.linkedin.com/in/ali-alkhulaqi-19a1a3315/} {\underline{linkedin/in/ali-alkhulaqi}}$|$
+    \href{https://github.com/AliA749} {\underline{github.com/Ali}}
+\end{center}
+%Education
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {New York Institue of Technology}{Manhattan, NYC}
+        {Bachelor of science in Computer Science}{Sep. 2025 -- May 2026}
+        \resumeSubheading
+        {Queens College}{Flushing, NYC}
+        {Bachelor of science in Computer Science}{Aug. 2026 -- May 2029}
+    \resumeSubHeadingListEnd
+%Experience
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Coding Coach}{October 2025 -- April 2026}
+        {TheCoderSchool}{Bayside, NYC}
+            \resumeItemListStart
+                \resumeItem{Taught coding fundamentals (Scratch, Python) to 15+ students across skill levels, designing custom lesson
+                plans tailored to each learner's pace and goals.}
+                \resumeItem{Demonstrated classroom adaptability by substituting across classes, maintaining consistent progress for all
+                students.}
+                \resumeItem{Introduced project-based learning, guiding advanced students through building functional Python
+                applications.}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Backend Developer}{August 2024 -- January 2025}
+        {Project Empower}{Remote}
+            \resumeItemListStart
+                \resumeItem{Architected and implemented user authentication and API routing for a non-profit web platform serving low-
+                income, first-generation college students.}
+                \resumeItem{Engineered session management logic ensuring zero-error post-login routing across authenticated user
+                flows.}
+                \resumeItem{Co-organized the Project Empower Hackathon (Jul–Aug 2024) with 2,000+ participants and 200,000 dollars in
+                prizes, coordinating logistics and participant communication.}
+            \resumeItemListEnd
+        \resumeSubheading
+        {IT Media Intern}{July 2025 -- August 2025}
+        {Skylight Pharmacy}{Jamaica, NYC}
+            \resumeItemListStart
+                \resumeItem{Produced promotional video content for Instagram and TikTok, growing digital brand engagement.}
+                \resumeItem{Launched and managed Google Ads and Meta Ads campaigns, expanding audience reach for the
+                pharmacy's digital presence.}
+                \resumeItem{Streamlined internal data entry workflows and assisted with day-to-day IT support tasks}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Cashier/Customer Service Lead}{June 2021 -- December 2023}
+        {Go Detox}{VanWyck, NYC}
+            \resumeItemListStart
+                \resumeItem{Led a team of 3, managing daily operations and contributing to a 20–30% sales increase during peak
+                summer hours.}
+                \resumeItem{Resolved technical issues with third-party delivery platforms (Uber Eats, DoorDash, Grubhub), reducing
+                order errors and improving turnaround time under pressure.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%Projects
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Pr-Review-Assistant} $|$ \emph{Typescript, React, Supabase, ClaudeAI, GroqAI}{July 2026 -- Present}}
+            \resumeItemListStart
+                \resumeItem{Developed a Full-stack web app using Typescript serving the backend and React as the frontend}
+                \resumeItem{Implemented Github OAuth to get user's repositories}
+                \resumeItem{The AI would look at the chosen pull request and help show vulnerabilities}
+                \resumeItem{Used Groq for free AI service while using Claude to help with my planning and implementation}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Non-Profit Student Database} $|$ \emph{Typescript,MongoDB}{August 2025 -- January 2026}}
+            \resumeItemListStart
+                \resumeItem{Architected the database schema and secure REST API routes for Project Empower's student-facing
+                platform, handling authentication flows and role-based routing logic using Typescript and MongoDB.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%programming skills\certs
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in,label={}]
+        \small{\item{
+            \textbf{Languages}{: Java, Python, SQL(MySQL),Rust, Typescript} \\
+            \textbf{FrameWorks}{: React, Node.js, Flask, FastAPI} \\ 
+            \textbf{Developer Tools}{: Git, Docker, ClaudeAI, Visual Studio Code, IntelliJ, Linux(basics)}\\
+            \textbf{Certifcations}{: YouScience(Java Certifcation), Mimo(Typescript Certifcation)}
+        }}
+    \end{itemize}
+\end{document}
